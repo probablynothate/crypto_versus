@@ -6,82 +6,17 @@
     <meta property="og:description" content="A multiplayer versus hacking simulator"/>
     <meta property="og:url" content="https://cry-vs.herokuapp.com/"/>
     <meta property="og:image" content="full thumbnail path"/>
+      <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>Crypto Versus</title>
-    <style>
-      body {
-        color:white;
-        background-color:black;
-      }
-
-      form {
-        width:250px;
-        margin:auto;
-        margin-top:10%;
-        text-align:center;
-      }
-
-      form h1 {
-        margin-bottom:50px;
-      }
-
-      form input {
-        color:white;
-        background-color:#111111;
-        border-color:white;
-        border-radius:5px;
-        width:200px;
-        height:25px;
-        margin:5px;
-      }
-
-      form input:hover, form input:focus {
-        background-color:#222222;
-      }
-
-      form input:focus {
-        outline:1px solid white;
-      }
-
-      form p {
-        width:200px;
-        margin:20px auto;
-      }
-
-      #submit {
-        width:124px;
-        height:40px;
-        margin-top:20px;
-        font-weight:bold;
-      }
-
-      #submit:active {
-        background-color:#333333;
-      }
-
-      #status_message {
-        border-radius:5px;
-        overflow:hidden;
-      }
-
-      #signup_link {
-        color:teal;
-        text-decoration:underline;
-        cursor:pointer;
-      }
-
-      #signup_link:active {
-        color:red;
-      }
-    </style>
   </head>
   <body>
     <form onsubmit="return login()" autocomplete="off">
       <h1>Login</h1>
       <p id="status_message"></p>
-      <input id="username" type="username" placeholder="username" maxlength="30" size="30" pattern="^[a-zA-Z0-9\-_.\+<>\(\){}\[\]\|:;~/\\!?&$#*@]+" autofocus required/><br/>
-      <input id="password" maxlength="30" size="30" type="password" placeholder="password" pattern="^[a-zA-Z0-9\-_.\+<>\(\){}\[\]\|:;~/\\!?&$#*@]+" required/><br/>
+      <input id="username" type="username" placeholder="  Username" maxlength="30" size="30" pattern="^[a-zA-Z0-9\-_.\+<>\(\){}\[\]\|:;~/\\]+" autofocus required/><br/>
+      <input id="password" maxlength="30" size="30" type="password" placeholder="  Password" pattern="^[a-zA-Z0-9\-_.\+<>\(\){}\[\]\|:;~/\\]+" required/><br/>
       <input id="submit" type="submit"/>
-      <p>Don't have an account?<br/><a id="signup_link">Signup</a></p>
+      <p>Don't have an account?<br/><br/><a id="signup_link">Register</a></p>
     </form>
     <script>
       function login() {

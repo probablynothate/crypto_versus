@@ -1,0 +1,74 @@
+@font-face{
+  font-family: Jetbrains Mono;
+  src: url(JetBrainsMono-Bold.woff2);
+}
+body{
+    font-family: JetBrains Mono;
+    color:white;
+    background-color: #121212;
+  }
+
+  form {
+    width:250px;
+    margin:auto;
+    margin-top:10%;
+    text-align:center;
+  }
+
+  form h1 {
+    margin-bottom:50px;
+  }
+
+  form input {
+    color:white;
+    border: none;
+    border-radius: 5px;
+    background-color:#212121;
+    border-color:white;
+    border-bottom: 1ch;
+    width:200px;
+    height:25px;
+    margin:5px;
+  }
+
+  form input:hover, form input:focus {
+    background-color:#222222;
+    border-color: #66f785;
+  }
+
+
+  form p {
+    width:200px;
+    margin:20px auto;
+  }
+
+  #submit {
+    width:124px;
+    height:40px;
+    margin-top:20px;
+    font-weight:bold;
+    background-color:#66f785;
+  }
+
+  #submit:hover {
+    background-color:#6fd886;
+  }
+
+  #submit:active {
+    background-color:#4abd63;
+  }
+
+  #status_message {
+    border-radius:5px;
+    overflow:hidden;
+  }
+
+  #signup_link {
+    color:teal;
+    cursor:pointer;
+    margin-top: 5px;
+  }
+
+  #signup_link:active {
+    color:red;
+  }
